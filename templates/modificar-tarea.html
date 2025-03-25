@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>
+         App de Gestor de Tareas
+
+    </title>
+
+    <!-- vinculación de css a través de Flask -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+    <!--tema Bootstrap seleccionado Sketchy-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/sketchy/bootstrap.min.css" integrity="sha384-RxqHG2ilm4r6aFRpGmBbGTjsqwfqHOKy1ArsMhHusnRO47jcGqpIQqlQK/kmGy9R" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css" integrity="sha384-X8QTME3FCg1DLb58++lPvsjbQoCT9bp3MsUU3grbIny/3ZwUJkRNO8NPW6zqzuW9" crossorigin="anonymous">
+    <!-- Google fonts: Permanent Marker -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+   <header>
+        <div class="card">
+            <div class="card-body">
+                <h1 class="display-4 text-center mt-4 titulo"><a href="/">App de Gestión de Tareas</a></h1>
+            </div>
+        </div>
+    </header>
+<body>
+    <main class="container p-4">
+        <h4 class="display-6 text-center mt-6 titulo">Modificación de la tarea: {{tarea.contenido}}.</h4>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 my-auto"> <!--Este div ocupará 4 columnas del espacio (centrado)-->
+                <div class="card"> <!--Creacion del objeto card-->
+                    <div class="card-header">
+
+                        <form action="/modificada/{{tarea.id}}" method="post">
+                            <div class="form-group">
+                                <input type="text" name="contenido_tarea" autofocus placeholder="Modifica la tarea {{tarea.contenido}}" class="form-control">
+                                <input type="text" name="categoria_tarea" autofocus placeholder="Categoría la Categoria" class="form-control">
+                                <input type="text" name="fecha_tarea" autofocus placeholder="Modifica la fecha límite" class="form-control">
+                            </div>
+                            <a href="modificada/{{tarea.id}}">
+                                <button type="submit" class="btn btn-primary btn-block">Guardar
+                                </button>
+                            </a>
+                        </form><br>
+                        <div>
+                            <a href="/">
+                                <button type="submit" class="btn btn-primary btn-block">Salir
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<footer botto>
+    <div class="card" >
+
+  <div class="card-body">
+
+    <p class="card-text">App de gestión de tareas creada por Jorge Zatón como práctica del curso de Python para <a href="https://www.tokioschool.com/" target="_blank">Tokio School</a>. </p>
+
+  </div>
+</div>
+</footer>
+</html>

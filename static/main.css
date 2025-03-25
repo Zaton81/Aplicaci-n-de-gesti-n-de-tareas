@@ -1,0 +1,22 @@
+body {
+   background: #A1FFCE;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.titulo {
+font-family: "Dancing Script", cursive;
+}
+.tarea-hecha {
+text-decoration:line-through;
+color:#cfcfcf
+}
+
+footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+
+   width:100%;
+   background:#999;
+}
