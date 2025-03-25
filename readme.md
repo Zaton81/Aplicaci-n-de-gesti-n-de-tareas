@@ -55,7 +55,6 @@ Este proyecto fue desarrollado como parte de una práctica del curso de Python e
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 
 Nombre: Jorge Zatón Pérez
-Email: tuemail@example.com
 LinkedIn: [Jorge Zaton](https://www.linkedin.com/in/jorge-zaton/)
 ¡Gracias por visitar mi proyecto! 😊 
 
