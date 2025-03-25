@@ -44,8 +44,8 @@
 
 1. Clona este repositorio:
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   cd <NOMBRE_DEL_PROYECTO>
+   git clone <app de gestión de tareas](https://github.com/Zaton81/Aplicaci-n-de-gesti-n-de-tareas)>
+   cd <Aplicaci-n-de-gesti-n-de-tareas>
 
 
 ✨ Créditos
